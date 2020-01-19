@@ -1,4 +1,4 @@
-function rzad=policz_rzad(wektor)
+function rzad=CalculateMatrixRange(wektor)
 %funkcja liczy rzad macierzy do 3 stopnia.Autor: Alicja Nowakowska
 %np policz_rzad([1 2 3 4;1 5 7 0])=2
 if size(wektor,1)==1
