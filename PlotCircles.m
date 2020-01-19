@@ -1,4 +1,4 @@
-function odp=rysujOkregi(a,b,c,d,liczba_kol)
+function odp=PlotCircles(a,b,c,d,liczba_kol)
 %Alicja Nowakowska funkcja rysuje okręgi na zadanym przedziale
 %w pierwszym rzędzie podane współrzędne x środków okręgó, w drugim
 %współrzędne y, w trzecim promienie
