@@ -1,7 +1,7 @@
-function rysuj_wykres_dwoch_zmiennych(wzor,param2,param1,param3)%%param3 zawiera wspó³rzêdne punktu
+function PlotF(x,y)(wzor,param2,param1,param3)%%param3 zawiera wspÃ³Â³rzÃªdne punktu
 %zadanie domowe3 Alicja Nowakowska
-%funkcja rysuje wykres funkcji dwóch zmiennych na obszarze prostok¹ta i
-%ko³a, pierwszy wektor dotyczy parametrów prostokata, a drugi kola,trzeci
+%funkcja rysuje wykres funkcji dwÃ³ch zmiennych na obszarze prostokÂ¹ta i
+%koÂ³a, pierwszy wektor dotyczy parametrÃ³w prostokata, a drugi kola,trzeci
 %to wpsolczerdne punktu,w ktorym rysowana bd styczna plaszczyzna
 %przyklad: rysuj_wykres_dwoch_zmiennych('x^2+y^2',[1 2 3 4],[1 2 3],[1.5 1.5])
 wzor=fcnchk(wzor,'vectorized');
@@ -30,7 +30,7 @@ y_0=param3(2);
 %%%%%%%%%
 h=0.01;
 if(x_0>=a&x_0<=b&y_0>=c&y_0<=d)
-    %rysuj p³aszczyznê styczn¹ pf=(f(x+h)-f(x-h))/(2*h) h=0.01;
+    %rysuj pÂ³aszczyznÃª stycznÂ¹ pf=(f(x+h)-f(x-h))/(2*h) h=0.01;
     [x y]=meshgrid(a:0.1:b,c:0.1:d);
     df_dx=(wzor(x_0+h,y_0)-wzor(x_0-h,y_0))/(2*h);
     %df_dx=num2str(df_dx)
