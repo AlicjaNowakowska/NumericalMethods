@@ -1,12 +1,12 @@
-function funkcjaZeStyczna(wzor,a,b,x0)
-%Alicja Nowakowska, rysowanie funkcji wraz ze styczna w punkcie
-%przyk≥ad: funkcjaZeStyczna('x.^2',2,4,2.5)
+function TangentLine(wzor,a,b,x0) 
+%Alicja Nowakowska, rysowanie funkcji wraz ze styczna w punkcie (plot function and tangent line in x0)
+%przyk≈Çad: funkcjaZeStyczna('x.^2',2,4,2.5)
 f=fcnchk(wzor);
 h=0.01;
 m=a:0.01:b;
 t=f(m);
 plot(m,t,'r','Linewidth',2)
-title('funkcja ze stycznπ w punkcie x0')
+title('funkcja ze styczn≈° w punkcie x0')
 xlabel('x');
 ylabel('y');
 hold on
