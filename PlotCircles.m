@@ -1,8 +1,8 @@
 function odp=rysujOkregi(a,b,c,d,liczba_kol)
-%Alicja Nowakowska funkcja rysuje okrêgi na zadanym przedziale
-%w pierwszym rzêdzie podane wspó³rzêdne x œrodków okrêgó, w drugim
-%wspó³rzêdne y, w trzecim promienie
-%przyk³ad rysujOkregi(1,4,1,4,10)
+%Alicja Nowakowska funkcja rysuje okrÄ™gi na zadanym przedziale
+%w pierwszym rzÄ™dzie podane wspÃ³Å‚rzÄ™dne x Å›rodkÃ³w okrÄ™gÃ³, w drugim
+%wspÃ³Å‚rzÄ™dne y, w trzecim promienie
+%przykÅ‚ad rysujOkregi(1,4,1,4,10)
 if(liczba_kol~=round(liczba_kol) | liczba_kol<=0)
     error('liczba_kol musi byc liczba naturalna')
 else
@@ -21,7 +21,7 @@ odp=[x; y ;r];
 kolory='ybkgrmc';
 numery_kolorow=round(1+rand(1,liczba_kol)*6);
 for i=1:liczba_kol
-wspx=promienie(i)*cos(t)+x_0(i);%x0,y0-wspó³rzêdne œrodka okrêgu
+wspx=promienie(i)*cos(t)+x_0(i);%x0,y0-wspÃ³Å‚rzÄ™dne Å›rodka okrÄ™gu
 wspy=promienie(i)*sin(t)+y_0(i);
 plot(wspx,wspy,kolory(numery_kolorow(i)));
 hold on
